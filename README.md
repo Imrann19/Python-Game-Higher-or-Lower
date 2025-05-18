@@ -1,16 +1,24 @@
-import random #Cette ligne importe la bibliotheque du random/This line imports the random library
+# Français:
 
-nb = random.randint(1, 100) #Cette ligne permet de stocker un nombre aleatoire entre 1 et 100 dans la variable nb(immuable)/This line allows to store a random number between 1 and 100 in the variable nb (immutable)
-while True: #Cette ligne permet de cree une boucle while/This line allows to create a while loop
-    try: #Cette ligne permet d'appliquer le mot-cle try/This line allows to apply the try keyword
-        input_utilisateur = int(input("Entrer un nombre entre 1 et 100:")) #Cette ligne permet de stocker la saisie de l'utilisateur(un nombre) dans la variable input_utilisateur/This line stores the user's input(a number) in the input_utilisateur variab
-        if input_utilisateur == nb: #Cette ligne permet de cree une condition 'if'(si la variable input_utilisateur est egale a la variable nb alors tout les fonctions dans le bloc 'if' vont etre executee)/This line allows to create an 'if' condition (if the input_utilisateur variable is equal to the nb variable then all the functions in the 'if' block will be executed)
-            print(f"Vous avez gagner le nombre est {nb}") #Cette ligne permet d'afficher ce message "Vous avez gagner le nombre est {valeur de nb}"/This line allows to display this message "You have won the number is {value of nb}"
-            break #Cette ligne permet de stopper la boucle while /This line allows to stop the while loop
-        else: #Cette ligne permet d'executer les fonctions qui sont dans le bloc 'else' si la condition 'if input_utilisatuer == nb' ne remplie pas tout les criteres/This line allows to execute the functions that are in the 'else' block if the condition 'if input_utilisateur == nb' does not meet all the criteria
-            if input_utilisateur > nb: #Cette ligne permet de cree une condition 'if'(si la variable input_utilisateur est superieur a la variable nb alors tout les fonctions dans le bloc 'if' vont etre executee)/This line allows to create an 'if' condition (if the input_utilisateur variable is greater than the nb variable then all the functions in the 'if' block will be executed)
-                print("Le nombre est plus petit") #Cette ligne permet d'afficher ce message "Le nombre est plus petit"/This line allows to display this message "The number is smaller"
-            else: #Cette ligne permet d'executer les fonctions qui sont dans le bloc 'else' si la condition 'if input_utilisateur > nb' ne remplie pas tout les criteres/This line allows to execute the functions that are in the 'else' block if the condition 'if input_utilisateur > nb' does not meet all the criteria
-                print("Le  nombre est plus grand") #Cette ligne permet d'afficher ce message "Le nombre est plus grand"/This line allows to display this message "The number is bigger"
-    except ValueError: #Cette ligne permet d'appliquer le mot-cle except pour gérer les erreurs sans planter le programme./This line allows to apply the except keyword to handle errors without crashing the program.
-        print("Ce n'est pas un nombre") #Si jamais l'utilisateur a ecrit un texte il y aura une erreur et l'ordinateur va nous afficher ce message "Ce n'est pas un nombre"/if the user ever writes a text there will be an error and the computer will display this message "This is not a number"
+## Description
+Ce programme, codé en Rust, permet de jouer au jeu du Plus ou Moins.
+
+
+## Fonctionnement
+Au début du code, j'ai créé une variable nb qui génère un nombre aléatoire entre 1 et 100 (le nombre à deviner). Ensuite, j'ai défini une boucle while qui se termine lorsque l'utilisateur a deviné le nombre.
+La boucle contient une fonction input qui permet de lire les entrées de l'utilisateur et les Les mots-clés try et except qui permettent de gérer les erreurs (ou exceptions).
+
+Si l'utilisateur se trompe, un message lui indique si le nombre entré est plus grand ou plus petit que le nombre à deviner, grâce à l'instruction conditionnelle if.
+En revanche, si l'utilisateur parvient à deviner le nombre, le jeu se termine en affichant le nombre deviné.
+
+# English:
+
+## Description
+This program, written in Rust, allows you to play the Higher or Lower game.
+
+## How It Works
+At the beginning of the code, I created a variable nb that generates a random number between 1 and 100 (the number to guess). Then, I defined a while loop that ends when the user guesses the number.
+The loop contains an input function that reads the user’s input and the try and except keywords which allow errors (or exceptions) to be handled.
+
+If the user enters the wrong number, a message will indicate whether the entered number is higher or lower than the target number, using the if conditional statement.
+However, if the user manages to guess the number, the game ends by displaying the guessed number.
