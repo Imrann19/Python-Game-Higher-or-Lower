@@ -9,6 +9,7 @@ Au début du code, j'ai créé une variable nb qui génère un nombre aléatoire
 La boucle contient:
 
 -Une fonction input qui permet de lire les entrées de l'utilisateur
+
 -Les mots-clés try et except qui permettent de gérer les erreurs (ou exceptions).
 
 Si l'utilisateur se trompe, un message lui indique si le nombre entré est plus grand ou plus petit que le nombre à deviner, grâce à l'instruction conditionnelle if.
@@ -24,6 +25,7 @@ At the beginning of the code, I created a variable nb that generates a random nu
 The loop contains:
 
 -An input function that reads the user’s input.
+
 -The try and except keywords which allow errors (or exceptions) to be handled.
 
 If the user enters the wrong number, a message will indicate whether the entered number is higher or lower than the target number, using the if conditional statement.
