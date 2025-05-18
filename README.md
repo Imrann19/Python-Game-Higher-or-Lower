@@ -1,7 +1,7 @@
 # Français:
 
 ## Description
-Ce programme, codé en Rust, permet de jouer au jeu du Plus ou Moins.
+Ce programme, codé en Python, permet de jouer au jeu du Plus ou Moins.
 
 
 ## Fonctionnement
@@ -14,7 +14,7 @@ En revanche, si l'utilisateur parvient à deviner le nombre, le jeu se termine e
 # English:
 
 ## Description
-This program, written in Rust, allows you to play the Higher or Lower game.
+This program, written in Python, allows you to play the Higher or Lower game.
 
 ## How It Works
 At the beginning of the code, I created a variable nb that generates a random number between 1 and 100 (the number to guess). Then, I defined a while loop that ends when the user guesses the number.
