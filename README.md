@@ -7,6 +7,7 @@ Ce programme, codé en Rust, permet de jouer au jeu du Plus ou Moins.
 ## Fonctionnement
 Au début du code, j'ai créé une variable nb qui génère un nombre aléatoire entre 1 et 100 (le nombre à deviner). Ensuite, j'ai défini une boucle while qui se termine lorsque l'utilisateur a deviné le nombre.
 La boucle contient:
+
 -Une fonction input qui permet de lire les entrées de l'utilisateur
 -Les mots-clés try et except qui permettent de gérer les erreurs (ou exceptions).
 
@@ -21,6 +22,7 @@ This program, written in Rust, allows you to play the Higher or Lower game.
 ## How It Works
 At the beginning of the code, I created a variable nb that generates a random number between 1 and 100 (the number to guess). Then, I defined a loop that ends when the user guesses the number.
 The loop contains:
+
 -An input function that reads the user’s input.
 -The try and except keywords which allow errors (or exceptions) to be handled.
 
